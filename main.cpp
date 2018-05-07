@@ -4,11 +4,8 @@
 #include <wiringPi.h>
 #include <iostream>
 
-#include <unistd.h> 
-#include <fcntl.h> 
-#include <termios.h> 
 #include <errno.h>
-#include <sstream>gt h
+#include <sstream>
 
 #include <thread>
 #include <mutex>
@@ -48,7 +45,7 @@ int main(int argc, char **argv)
 int  wiringPiSetup (void) ;
 std::thread t1(serial_send); 
 
-
+int ihue = 0;
   while(1 == 1)
   {
 //**********************//
@@ -57,7 +54,7 @@ std::thread t1(serial_send);
       
       
       
-     /*
+     //test pattern
       //hue run
       for (int x = 0; x<8;x++)
       {  
@@ -76,41 +73,8 @@ std::thread t1(serial_send);
       }
       }
       }
-    */
+    
      
-      /*
-      
-      for (int roww = 0; roww<8;roww++)
-      {
-              
-      for (int run = 0; run <192;run++)
-      {
-          
-          set(roww, run, 0);
-          digitalWrite (0, HIGH) ; delay (5) ;
-          digitalWrite (0,  LOW) ; delay (5) ;
-          
-      }
-      
-      }
-      
-      */
- 
-      
-      /*
-      for (int x=0;x<100;x++){
-          
-                set_all(100);
-              	digitalWrite (0, HIGH) ; delay (75) ;
-                digitalWrite (0,  LOW) ; delay (75) ;
-                set_all(0);
-                digitalWrite (0, HIGH) ; delay (75) ;
-                digitalWrite (0,  LOW) ; delay (75) ;
-      }
-      */
-      
-
-
 
      //    digitalWrite (0, HIGH) ; delay (350) ;
      //    digitalWrite (0,  LOW) ; delay (350) ;
