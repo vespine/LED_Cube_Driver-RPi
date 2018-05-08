@@ -1,11 +1,13 @@
-# LED_Cube_Driver-RPi
-LED_Cube_Driver for RPi in C++
+# LED_Cube_Pattern_Generator_RPi
+LED_Cube_Pattern_Generator_RPi for Raspberry Pi in C++
 works with LED_Cube_Simulator
 
 This is a Raspberry Pi application for generating 8x8x8 RGB LED Cube "patterns". 
+NOTE: This is not a standalone "driver" for LED cube, it is a pattern generator that can send patterns to existing, real or virtual LED cubes. 
 
 
-Have you have ever wanted to play with generating LED Cube patterns in software but don't have a real cube? This Raspberry Pi pattern generator works with my Windows LED_Cube_simulator.
+Have you have ever wanted to play with generating LED Cube patterns in software but don't have a real cube? 
+This Raspberry Pi pattern generator works with my Windows LED_Cube_simulator.
 
 There's a little bit of setup required to get this working. 
 
