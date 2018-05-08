@@ -23,7 +23,7 @@ http://osdevlab.blogspot.com.au/2016/02/how-to-install-latest-boost-library-on.h
 
 This was probably the hardest step, but it made the network communication quite simple.
 
-The "heart" of the cube is a data array display_array[8][192]
+The "heart" of the cube is a data array display_array[8][192] this is what gets sent to the cube / simulator. 
 
 8 represents the horizontal "layers", 192 represents 64 red, 64 green and 64 blue "values" of each layer. Values are 0 - 100. 
 
