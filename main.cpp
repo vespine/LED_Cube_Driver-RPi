@@ -31,7 +31,7 @@ try {
             acceptor.accept(socket);
             boost::system::error_code ignored_error;
             boost::asio::write(socket, boost::asio::buffer(display_array), ignored_error);
-          delay (1) ;
+          delay (2) ;
         }
     } catch (std::exception& e) {
         std::cerr << e.what() << std::endl;
@@ -53,6 +53,10 @@ int ihue = 0;
 //**********************//     
       
       
+	spheremove(1000, 10);
+
+	linespin(1000, 50);
+        effect_rotate_random_pixels(2000, 5, 50);
       
      //test pattern
       //hue run
@@ -67,8 +71,8 @@ int ihue = 0;
           set_xhue(x,y,z,ihue);
           ihue++;
           if (ihue==360) ihue =0;
-          digitalWrite (0, HIGH) ; delay (2) ;
-          digitalWrite (0,  LOW) ; delay (2) ;
+         digitalWrite (0, HIGH) ; delay (2) ;
+         digitalWrite (0,  LOW) ; delay (2) ;
           
       }
       }
@@ -83,4 +87,3 @@ int ihue = 0;
  
  return 0;
  }
-
